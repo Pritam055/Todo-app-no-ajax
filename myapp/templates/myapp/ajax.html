@@ -1,0 +1,40 @@
+<script>
+// console.log("Ajax called");
+
+ 
+let searchTodo = document.querySelector('#searchTodo');
+if(searchTodo){
+    searchTodo.addEventListener('keyup', search_todo);
+}
+
+
+function search_todo(e){
+    let searchValue = document.querySelector('#searchTodo').value.toUpperCase().trim() ;
+    console.log(searchValue.trim());
+
+    let allTodos = document.querySelectorAll('.searchTitle');
+    // console.log(allTodos);
+    // console.log(allTodos.length);
+    for(let i=0; i<allTodos.length; i++){ 
+        x = allTodos[i].innerHTML.toUpperCase();
+        if(x.indexOf(searchValue) > -1){
+            let presentNodeName = allTodos[i].parentElement.nodeName;
+            if(presentNodeName == 'S'){
+                allTodos[i].parentElement.parentElement.parentElement.parentElement.style.display = '';
+            }else{
+                allTodos[i].parentElement.parentElement.style.display = '';
+            }
+        }else{
+            let presentNodeName = allTodos[i].parentElement.nodeName;
+            if(presentNodeName == 'S'){
+                allTodos[i].parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+            }else{
+                allTodos[i].parentElement.parentElement.style.display = 'none';
+            }
+
+        }
+    }
+
+}
+
+</script>

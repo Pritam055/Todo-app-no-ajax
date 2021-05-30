@@ -1,0 +1,43 @@
+ 
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+ 
+<div class="header-bar">
+    <div>
+        <h1>Todo List</h1> 
+        <h3 style="display: inline;" id="userid">User: {{request.user}}</h3> 
+    </div>
+    <a href="{% url 'todo:logout' %}" id="logout-link"  >Logout</a> 
+</div>
+<div id="search-add-wrapper"> 
+        <input type="text" id="searchTodo" placeholder="search..."> 
+        <p><a href="{% url 'todo:addTodo' %}" id="add-link" >&#x2b;</a></p>
+</div>
+<div class="todo-items-wrapper">
+        {% for t in todos %}
+            <div class="text-wrapper"> 
+                {% if t.complete %}
+                    <div class="todo-title">
+                        <i><s><a class="searchTitle" href="{% url 'todo:detail' t.id %}">{{t.title}}</a></s></i>
+                    </div>
+                    <div class="todo-description">
+                        <i><s>{{ t.description|truncatechars:20 }}</s></i>
+                    </div>      
+                {% else %}      
+                    <div class="todo-title">
+                        <a class="searchTitle" href="{% url 'todo:detail' t.id %}">{{t.title}}</a>
+                    </div>
+                    <div class="todo-description">
+                        {{t.description|truncatechars:20}}
+                    </div>    
+                {% endif %}
+                <a id="delete-link" href="{%  url 'todo:delete' t.id %}">&#215;</a>
+
+            </div>
+        {% endfor %}
+    </table>
+</div> 
+
+
+{% endblock  %}

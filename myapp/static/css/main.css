@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(233, 222, 233);
+    /* background-color:  #FAFAFA; */
+    font-family: 'Nunito', sans-serif;
+    padding-top: 50px;
+
+}
+a{
+    color:rgb(149, 49, 216);
+}
+
+h1,h2,h3 {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    max-width: 550px;
+    margin: auto;
+    /* background-color: rgb(160, 104, 197); */
+    background-color:  #fff;
+    border-radius: 40px ;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.header-bar {
+    color: #fff;
+    background-color: rgb(160, 104, 197);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border-radius: 10px 15px 0 0; */
+}
+.header-bar a{
+    text-decoration: none;
+}
+/* .task-items-wrapper {
+    margin: 20px;
+    padding: 20px;
+
+} */ 
+#userid{
+    margin-right: 30px;
+}
+#logout-link{
+    color:white;
+} 
+
+#search-add-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+input[type=text],
+input[type=password],
+textarea{
+    width: 90%;
+    border: 1px solid rgb(160, 104, 197);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button{
+    border: 1px solid rgb(160, 104, 197);
+    background-color: #FAFAFA;
+    padding: 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 14px;
+    color: rgb(147, 43, 216);
+}
+/* making label tag block */
+label{
+    display: block;
+}
+
+#add-link{
+color:rgb(160, 104, 197);
+text-decoration: none;
+font-size: 35px;
+text-shadow: 1px 1px rgb(143, 70, 192);
+} 
+
+#delete-link{
+    color:rgb(236, 2, 2);
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: 1px 1px rgb(143, 70, 192);
+    font-weight: 900; 
+    cursor: pointer;
+}
+
+/* todo list  */
+.todo-items-wrapper{
+    padding: 20px;
+}
+.text-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.todo-title > a{
+    text-decoration: none;
+}
+
+#detail-update-combo{
+    display:flex;
+    justify-content: space-between;
+}
+
+.errorlist{
+    color:red;
+}
