@@ -1,10 +1,8 @@
 # Todo-app-no-ajax
-=> This is my first project with django framework.
-=> This project provides various functionality like: registration, login, logout, search, add todo, update and delete.
-=> The project uses technologies like Python, HTML, CSS and little bit of Javascript.  Javascript is used only for search functionality in the project to make it fast and easy.
-=> It is done with django CBV(class based view).
-=> Those todos which have already been done and completed are striked. 
-=> Below are some of the screenshots of the project:
+This is my first project with django framework. This project provides various functionality like: registration, login, logout, search, add todo, update and delete.
+The project uses technologies like Python, HTML, CSS and little bit of Javascript.  Javascript is used only for search functionality in the project to make it fast and easy.
+
+It is done with django CBV(class based view). Those todos which have already been done and completed are striked. Below are some of the screenshots of the project:
 
 1) Login Page
 
