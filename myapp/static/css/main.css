@@ -6,11 +6,14 @@ body {
 
 }
 a{
-    color:teal
-
-h1,h2,h3 {
-    font-family: 'Raleway', sans-serif;
+    color:teal;
 }
+
+h1, h2, h3 
+{
+    font-family: 'Raleway';
+}
+
 .container {
     max-width: 550px;
     margin: auto;
